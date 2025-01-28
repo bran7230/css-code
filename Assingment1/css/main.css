@@ -104,9 +104,13 @@ section p:first-letter{
 }
 
 /* making the last paragraph italic */
-footer p:nth-last-child(1){
+footer p:nth-last-child(2){
     font-family: 'Times new roman', Times, serif;
     font-style: italic;
+}
+a{
+    color: whitesmoke;
+    text-decoration: underline;
 }
 /* Setting default settings for smaller screens */
 @media screen and (max-width: 800px){
