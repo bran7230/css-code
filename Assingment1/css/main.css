@@ -54,6 +54,7 @@ section p{
     /* padding to make it farther from border at smaller sizes */
     padding-right: 5px; 
     padding-left: 5px;
+    word-spacing: 1px;
 }
 
 header img{
