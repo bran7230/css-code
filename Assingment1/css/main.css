@@ -86,7 +86,7 @@ footer{
     /* centering the text */
     font-weight: 100;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     position: static;
     bottom: 0;
     justify-content: center;
@@ -110,7 +110,7 @@ section p:first-letter{
 }
 
 /* making the last paragraph italic */
-footer p:nth-last-child(1){
+footer p:nth-last-child(2){
     font-family: 'Times new roman', Times, serif;
     font-style: italic;
 }
@@ -138,11 +138,12 @@ footer p:nth-last-child(1){
         padding-left: 5px; /* padding to make it farther from border at smaller sizes */
         padding-top: 8px; /* padding to make it farther from the top of the border at smaller sizes */
     }
-    .verdanatest{
-        font-size: 1rem; 
+    .verdanatest a{
+        font-size: 0.8rem; 
     }
     footer{
         font-size: 0.8rem; /* making the font smaller for smaller screens*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .firstlettertest{
         font-size: 1rem;
