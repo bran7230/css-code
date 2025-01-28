@@ -20,7 +20,7 @@ body{
     min-width: 380px;
     margin: 0 auto;
     color: whitesmoke; 
-    border: 10x whitesmoke ; /* border around the body */
+    border: 0.3rem whitesmoke ; /* border around the body */
     border-style: double; /* border style */
 
     /* border radius code is to make it rounded */
