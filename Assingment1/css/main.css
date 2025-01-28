@@ -21,7 +21,7 @@ body{
     margin: 0 auto;
     color: whitesmoke; 
     border: 10x whitesmoke ; /* border around the body */
-    border-style: solid; /* border style */
+    border-style: double; /* border style */
 
     /* border radius code is to make it rounded */
     border-top-left-radius: 16px; 
@@ -43,7 +43,7 @@ section h2{ /* h2 tag for pargraph description */
 }
 
 section p{
-    text-align: justify;
+    text-align: justify; /* justify the text */
     justify-content: center;
     font-family: "Lora", serif;
     font-size: 1.2rem;
@@ -63,8 +63,8 @@ header img{
     width: 15%;
     height: auto;
     display: block; /* centering the image */
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 .verdanatest{ /* verdana font example cod */
@@ -102,16 +102,11 @@ section p:first-letter{
 }
 
 /* making the last paragraph italic */
-footer p:nth-last-child(2){
+footer p:nth-last-child(1){
     font-family: 'Times new roman', Times, serif;
     font-style: italic;
 }
-a{  
-    display: block;
-    text-align: center;
-    color: whitesmoke;
-    text-decoration: underline;
-}
+
 /* Setting default settings for smaller screens */
 @media screen and (max-width: 800px){
     .firstlettertest:first-letter{ /* making the first letter bigger for small screens*/
@@ -121,6 +116,8 @@ a{
         margin: 0.1em 0.1em 0.1em 0;
     }
     section p{
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 0.8rem; /* making the font smaller for smaller screens*/
     }
     section h2{
@@ -142,6 +139,9 @@ a{
     }
    body{
     border: none; /* removing the border for smaller screens since it did not look good */
+    }
+    .times{
+        font-size: 1rem;
     }
 
 }
