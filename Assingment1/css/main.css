@@ -80,8 +80,6 @@ header img{
 footer{
     font-family: 'Times New Roman', Times, serif;
     /* centering the text */
-    text-align: center;
-    justify-content: center;
     font-weight: 100;
 }
 footer p{
@@ -108,7 +106,9 @@ footer p:nth-last-child(2){
     font-family: 'Times new roman', Times, serif;
     font-style: italic;
 }
-a{
+a{  
+    display: block;
+    text-align: center;
     color: whitesmoke;
     text-decoration: underline;
 }
