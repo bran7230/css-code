@@ -1,0 +1,149 @@
+/* CSS font imports: */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
+/*Basic html settings */
+html {
+	font-size: 100%;
+	line-height: 1.4; /* setting line height */
+	background: #111;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* fixed background */
+	background-size: cover;
+    font-weight: 100;
+    text-rendering: optimizeLegibility; /* making the text look better */
+}
+
+
+
+
+body{
+    background-color: #111;
+    max-width: 1500px;
+    min-width: 380px;
+    margin: 0 auto;
+    color: whitesmoke; 
+    border: 10x whitesmoke ; /* border around the body */
+    border-style: solid; /* border style */
+
+    /* border radius code is to make it rounded */
+    border-top-left-radius: 16px; 
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    hyphens: auto; /* hyphenation */
+    font-variant-ligatures:common-ligatures ; /* ligatures */
+}
+
+
+section h2{ /* h2 tag for pargraph description */
+    font-family: "Merriweather", serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    /* centering the text */
+    text-align: center; 
+    justify-content: center;
+}
+
+section p{
+    text-align: justify;
+    justify-content: center;
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    max-width: 1000px;
+    margin: 0 auto; /* centering the text */
+
+    /* padding to make it farther from border at smaller sizes */
+    padding-right: 5px; 
+    padding-left: 5px;
+}
+
+header img{
+    /* centering the image */
+    justify-content: left;
+    align-items: left;
+    width: 15%;
+    height: auto;
+    display: block; /* centering the image */
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.verdanatest{ /* verdana font example cod */
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    /*making it stand out */
+    font-weight: bold;
+}
+
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    /* centering the text */
+    text-align: center;
+    justify-content: center;
+    font-weight: 100;
+}
+footer p{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+section p:first-letter{
+    /* making the first letter bigger */
+    float: left;
+    font-size: 6rem;
+    line-height: 0.65;
+    margin: 0.1em 0.1em 0.1em 0;
+}
+
+.times{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* making the last paragraph italic */
+footer p:nth-last-child(1){
+    font-family: 'Times new roman', Times, serif;
+    font-style: italic;
+}
+/* Setting default settings for smaller screens */
+@media screen and (max-width: 800px){
+    .firstlettertest:first-letter{ /* making the first letter bigger for small screens*/
+        float: left;
+        font-size: 4.5rem;
+        line-height: 0.65;
+        margin: 0.1em 0.1em 0.1em 0;
+    }
+    section p{
+        font-size: 0.8rem; /* making the font smaller for smaller screens*/
+    }
+    section h2{
+        font-size: 1.2rem; /* making the font smaller for smaller screens*/
+    }
+    header img{
+        width: 20%; /* making the image smaller for smaller screens*/
+        padding-left: 5px; /* padding to make it farther from border at smaller sizes */
+        padding-top: 8px; /* padding to make it farther from the top of the border at smaller sizes */
+    }
+    .verdanatest{
+        font-size: 1rem; 
+    }
+    footer p{
+        font-size: 1rem; 
+    }
+    .firstlettertest{
+        font-size: 1rem;
+    }
+   body{
+    border: none; /* removing the border for smaller screens since it did not look good */
+    }
+
+}
