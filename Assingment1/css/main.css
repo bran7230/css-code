@@ -14,9 +14,6 @@ html {
     text-rendering: optimizeLegibility; /* making the text look better */
 }
 
-
-
-
 body{
     background-color: #111;
     max-width: 1500px;
@@ -81,8 +78,6 @@ header img{
     font-weight: bold;
 }
 
-
-
 footer{
     font-family: 'Times New Roman', Times, serif;
     /* centering the text */
@@ -100,7 +95,7 @@ section p:first-letter{
     float: left;
     font-size: 6rem;
     line-height: 0.65;
-    margin: 0.1em 0.1em 0.1em 0;
+    margin: 0.1em 0.1em 0 0;
 }
 
 .times{
