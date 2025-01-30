@@ -57,21 +57,16 @@ section p{
 }
 
 body:hover{
-box-shadow: 0 0 5rem whitesmoke;
+box-shadow: 0 0 7rem whitesmoke;
 }
-
-
-section{
-    filter: blur(100px);
-    text-shadow: 0 0 1px whitesmoke;
+section p{
+    filter: blur(80px);
 }
-section:nth-last-child(1){
+section p:hover{
     filter: blur(0px);
+    transition: filter 0.1s ease-in-out;
 }
 
-section:hover{
-    filter: blur(0px);
-}
 
 header img{
     /* centering the image */
