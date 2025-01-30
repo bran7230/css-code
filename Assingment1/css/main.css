@@ -54,7 +54,7 @@ section p{
     /* padding to make it farther from border at smaller sizes */
     padding-right: 5px; 
     padding-left: 5px;
-    word-spacing: 1px;
+    
 }
 
 header img{
@@ -151,7 +151,7 @@ footer p:nth-last-child(2){
     }
    body{
     border: none; /* removing the border for smaller screens since it did not look good */
-    line-height: 1.8;
+    min-width: 300px;
     }
     .times{
         font-size: 1rem;
