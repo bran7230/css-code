@@ -189,8 +189,8 @@ footer p:nth-last-child(2){
         font-size: 1rem;
     }
    body{
-    border: none; /* removing the border for smaller screens since it did not look good */
-    min-width: 300px;
+        border: none; /* removing the border for smaller screens since it did not look good */
+        min-width: 300px;
     }
     .times{
         font-size: 1rem;
