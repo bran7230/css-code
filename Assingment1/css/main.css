@@ -32,6 +32,7 @@ body{
     font-variant-ligatures:common-ligatures ; /* ligatures */
     text-align: justify;
     justify-content: center;
+    transition: box-shadow 1s ease-in-out; /*Setting base transition for background aura */
 }
 
 
@@ -57,14 +58,18 @@ section p{
 }
 
 body:hover{
-box-shadow: 0 0 7rem whitesmoke;
+    box-shadow: 0 0 7rem whitesmoke; /* Glow around website */
+    transition: 1s ease-in-out; /*Make it fade in */
 }
-section p{
-    filter: blur(80px);
+
+main{
+    filter: blur(90px); /*Give it the blur effect */
+    transition: filter 1s ease-out; /* Ease out */
 }
-section p:hover{
-    filter: blur(0px);
-    transition: filter 0.1s ease-in-out;
+main:hover{
+    filter: blur(0px); /*Setting the main to no blur */
+    transition: filter 1s ease-in-out; /* Ease in */
+    
 }
 
 
