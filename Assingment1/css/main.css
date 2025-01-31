@@ -16,8 +16,8 @@ html {
 
 body{
     background-color: #111;
-    max-width: 1500px;
-    min-width: 380px;
+    max-width: 1500px; /*Setting max body width */
+    min-width: 380px; /* min width */
     margin: 0 auto;
     color: whitesmoke; 
     border: 0.3rem whitesmoke ; /* border around the body */
@@ -38,7 +38,7 @@ body{
 section h2{ /* h2 tag for pargraph description */
     font-family: "Merriweather", serif;
     font-size: 2.3rem;
-    font-weight: 300;
+    font-weight: 300; /*So its brighter than the paragraphs */
     /* centering the text */
     text-align: center; 
     justify-content: center;
@@ -85,30 +85,30 @@ header img{
 .verdanatest, a{ /* verdana font example cod */
     font-family: 'Verdana', sans-serif;
     font-size: 1.2rem;
-    padding-top: 0.9em;
+    padding-top: 1.3rem;
     margin: 0 auto;
     color: whitesmoke;
     /*making it stand out */
     text-decoration: underline;
 }
-section span.verdanaBold, .verdanaReg, .verdanaItalic, .verdanaitalicBold{
-    display: block;
+section span.verdanaBold, .verdanaReg, .verdanaItalic, .verdanaitalicBold{ /*Setting the quip paragraphs */
+    display: block; /*Setting it to block */
     text-align: center;
-    align-items: center;
-    font-size: 1.3rem;
+    align-items: center;/*Aling to center */
+    font-size: 1.3rem; /* A little bigger than regular */
 }
-.verdanaReg{
+.verdanaReg{ /*Regular Verdana */
     font-family: 'Verdana', sans-serif;
 }
-.verdanaBold{
+.verdanaBold{ /*Bold Verdana */
     font-family: 'Verdana', sans-serif;
     font-weight: bold;
 }
-.verdanaItalic{
+.verdanaItalic{ /*Italic Verdana */
     font-family: 'Verdana', sans-serif;
     font-style: italic;
 }
-.verdanaitalicBold{
+.verdanaitalicBold{ /*Bold and italic Verdana */
     font-family: 'Verdana', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -122,14 +122,14 @@ footer{
     /* centering the text */
     font-weight: 100;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    position: static;
-    bottom: 0;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    position: static; /*So it does not move */
+    
+    justify-content: center; /*aling center */
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
-    padding-top: 2rem;
+    padding-top: 2rem; /*So theres more white space */
 }
 
 section p:first-letter{
@@ -154,11 +154,11 @@ footer p:nth-last-child(2){
 
 /* Setting default settings for smaller screens */
 @media screen and (max-width: 800px){
-    section p::first-letter{
+    section p::first-letter{ /*Drop cap */
         float: left;
         font-size: 4.5rem;
         line-height: 0.65;
-        margin: 0.1em 0.1em 0em 0;
+        margin: 0.1em 0.1em 0em 0; /*More space between lines */
     }
     section p{
         padding-left: 1rem;
@@ -169,6 +169,9 @@ footer p:nth-last-child(2){
     section h2{
         font-size: 1.2rem; /* making the font smaller for smaller screens*/
         padding-top: 0.5rem;
+    }
+    section span.verdanaBold, .verdanaReg, .verdanaItalic, .verdanaitalicBold{
+        font-size: 1rem;
     }
     header img{
         width: 20%; /* making the image smaller for smaller screens*/
