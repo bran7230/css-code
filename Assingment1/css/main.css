@@ -32,6 +32,7 @@ body{
     font-variant-ligatures:common-ligatures ; /* ligatures */
     text-align: justify;
     justify-content: center;
+    /* fade out transition for back-glow */
     transition: 1s ease-out;
 }
 
