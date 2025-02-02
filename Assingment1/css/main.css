@@ -60,7 +60,8 @@ section p{
 
 body:hover{
     box-shadow: 0 0 7rem whitesmoke; /* Glow around website */
-    transition: 1s ease-in; /*Make it fade in */
+    transition: 1s linear; /*Make it fade in */
+    
 }
 
 main{
@@ -69,7 +70,7 @@ main{
 }
 main:hover{
     filter: blur(0px); /*Setting the main to no blur */
-    transition: filter 1s ease-in-out; /* Ease in */
+    transition: filter 1s ease; /* Ease in */
     
 }
 
