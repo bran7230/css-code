@@ -84,10 +84,10 @@ header img{
     padding-left: 1rem;
 }
 
-.verdanatest, a{ /* verdana font example cod */
+a{ /* verdana font example cod */
     font-family: 'Verdana', sans-serif;
     font-size: 1.2rem;
-    padding-top: 1.5rem;
+    padding-top: 1.7rem;
     margin: 0 auto;
     color: whitesmoke;
     /*making it stand out */
@@ -156,6 +156,9 @@ footer p:nth-last-child(1){
 
 /* Setting default settings for smaller screens */
 @media screen and (max-width: 800px){
+    main{
+        filter: blur(0px);
+    }
     section p::first-letter{ /*Drop cap */
         float: left;
         font-size: 4.3rem;
@@ -183,9 +186,10 @@ footer p:nth-last-child(1){
         height: auto;
         padding-top: 0.7rem; /* padding to make it farther from the top of the border at smaller sizes */
     }
-    footer div .verdanatest a{
+    footer div a{
      font-size: 1rem;
      text-align: center;
+     padding-top: 1rem;
     }
     footer div{
         font-size: 0.8rem; /* making the font smaller for smaller screens*/
